@@ -31,6 +31,6 @@ function fib (n) {
 
 * Functions that differ based on variables they have access to will be treated as the same function.
 * Functions that are recursively defined are not memoized while they run.
-This can be avoided by defining the unmemoized version in terms of the unmemoized version
+This can be avoided by defining the unmemoized version in terms of the memoized version
 and the memoized version in terms of the unmemoized version!
 Pretty cray, right?
