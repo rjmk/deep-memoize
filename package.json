@@ -1,0 +1,27 @@
+{
+  "name": "deep-memoize",
+  "version": "0.0.0",
+  "description": "Memoization that recurses in the case of function output",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjmk/deep-memoize.git"
+  },
+  "keywords": [
+    "memoize",
+    "deep-memoize",
+    "recursion"
+  ],
+  "author": "rjmk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rjmk/deep-memoize/issues"
+  },
+  "homepage": "https://github.com/rjmk/deep-memoize#readme",
+  "devDependencies": {
+    "tape": "^4.2.2"
+  }
+}
