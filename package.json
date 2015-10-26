@@ -1,6 +1,6 @@
 {
   "name": "deep-memoize",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Memoization that recurses in the case of function output",
   "main": "index.js",
   "scripts": {
