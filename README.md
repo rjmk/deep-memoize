@@ -19,7 +19,7 @@ fast_and_thunky(40)() // will be superfast!
 fast_and_thunky(40)('silly arg') // will be slow again
 
 function fib_thunk (n) {
-  return function () { fib(n) }
+  return function () { return fib(n) }
 }
 
 function fib (n) {
@@ -33,4 +33,14 @@ function fib (n) {
 * Functions that are recursively defined are not memoized while they run.
 This can be avoided by defining the unmemoized version in terms of the memoized version
 and the memoized version in terms of the unmemoized version!
+
+```js
+var fully_memod = deep_memoize(curry(function (a, b, c) {
+  return (a === 0 || b === 0) ?
+      c :
+      fully_memod(a - 1, b, c) + fully_memod(a, b - 1, c)
+}))
+```
+
+
 Pretty cray, right?
